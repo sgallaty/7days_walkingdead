@@ -1505,7 +1505,7 @@
 	<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityNPC" param2="20"/>
 -->
 	<!--property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalBear" /-->
-	<!--property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityAnimalStag" /-->
+        <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag"/>
 	<property name="AITask-6" value="ApproachSpot"/>
 	<property name="AITask-7" value="Wander"/>
 	<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityZombie"/>
@@ -1636,8 +1636,12 @@
 		<property name="state0" value="Death"/>
 	</property>
 	<property name="AITask-1" value="Swim"/>
+<!--
 	<property name="AITask-2" value="BreakDoor"/>
 	<property name="AITask-3" value="BreakBlock"/>
+-->
+	<property name="AITask-2" value="Territorial"/>
+	<property name="AITask-3" value="Territorial"/>
 	<property name="AITask-4" value="Territorial"/>
 	<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag" param2="40"/>
 	<property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="15"/>
@@ -1646,9 +1650,9 @@
 	<property name="AITask-9" value="Wander"/>
 	<property name="AITarget-1" value="SetAsTargetIfHurt"/>
 	<property name="AITarget-2" value="BlockingTargetTask"/>
-	<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer" param2="8"/>
-	<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalStag"/>
 	<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityZombie"/>
+	<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalStag"/>
+	<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer" param2="8"/>
 
 	<property name="SmellAlertThreshold" value="5"/> <!-- for awake zombies -->
 
@@ -1743,8 +1747,12 @@
 	<property name="Parent" value="Enemies"/>
 	<property name="PhysicsBody" value="snake"/>
 	<property name="Faction" value="undead"/>
+<!--
 	<property name="AITask-1" value="BreakDoor"/>
 	<property name="AITask-2" value="BreakBlock"/>
+-->
+	<property name="AITask-1" value="Territorial"/>
+	<property name="AITask-2" value="Territorial"/>
 	<property name="AITask-3" value="Territorial"/>
 	<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="15"/>
 	<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityNPC" param2="15"/>
