@@ -1465,7 +1465,8 @@
 <entity_class name="animalZombieDog" extends="animalTemplateHostile">
 	<!-- todo extra properties need cleaned up -->
 	<property name="EntityType" value="Zombie"/>
-	<property name="Faction" value="undead"/>
+	<property name="Faction" value="animals"/>
+<!--	<property name="Faction" value="undead"/> -->
 	<property name="Mesh" value="Zombies/zombieDogPrefab"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="Parent" value="Enemies"/>
@@ -1478,10 +1479,10 @@
 	<property name="HandItem" value="handAnimalZombieDog"/>
 	<property name="Class" value="EntityZombieDog"/>
 	<property name="AvatarController" value="AvatarZombieDogController"/>
-	<property name="WanderSpeed" value="0.5"/>
-	<property name="ApproachSpeed" value="1.6"/>
-	<property name="NightWanderSpeed" value="0.3"/>
-	<property name="NightApproachSpeed" value="1.6"/>
+	<property name="WanderSpeed" value="0.2"/>
+	<property name="ApproachSpeed" value="1.2"/>
+	<property name="NightWanderSpeed" value="0.2"/>
+	<property name="NightApproachSpeed" value="1.2"/>
 	<property name="PanicSpeed" value="1.6"/>
 	<property name="MaxHealth" value="120"/>
 	<property name="SoundRandomTime" value="45.0"/>
@@ -1495,36 +1496,35 @@
 	<property name="SoundGiveUp" value="Enemies/Zombie_Dogs/zombiedoggiveup"/>
 	<property name="ExperienceGain" value="1407"/>
 	<property name="Immunity" value="sickness;disease;bleeding;wellness"/>
-	<property name="AITask-1" value="RunawayWhenHurt"/>
-	<property name="AITask-2" value="RunawayFromEntity" param1="EntityPlayer"/>
-	<property name="AITask-3" value="Territorial"/>
 <!-- helpful zombie dogs -->
-	<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityZombie"/>
+	<property name="AITask-1" value="RunawayWhenHurt"/>
+	<property name="AITask-2" value="ApproachAndAttackTarget" param1="EntityZombie"/>
+<!--	<property name="AITask-2" value="RunawayFromEntity" param1="EntityPlayer"/> -->
+	<property name="AITask-3" value="Territorial"/>
 <!--
        <property name="AITask-4" value="RunawayFromEntity" param1="EntityPlayer"/>
 	<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityNPC" param2="20"/>
 -->
 	<!--property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalBear" /-->
-        <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag"/>
+        <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityAnimalStag"/>
 <!--	<property name="AITask-6" value="ApproachSpot"/> -->
-	<property name="AITask-6" value="Wander"/>
+	<property name="AITask-5" value="Wander"/>
 	<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityZombie"/>
 	<property name="AITarget-2" value="BlockingTargetTask"/>
+	<property name="AITarget-3" value="SetNearestCorpseAsTarget" param1="EntityAnimalStag"/>
+	<property name="AITarget-4" value="SetNearestCorpseAsTarget" param1="EntityPlayer"/>
+	<property name="AITarget-5" value="SetNearestCorpseAsTarget" param1="EntityZombie"/>
+	<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityNPC"/>
 <!--
 	<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityPlayer"/>
 	<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityNPC"/>
 -->
-	<property name="AITarget-5" value="SetNearestCorpseAsTarget" param1="EntityZombie"/>
-	<property name="AITarget-3" value="SetNearestCorpseAsTarget" param1="EntityAnimalStag"/>
-	<property name="AITarget-4" value="SetNearestCorpseAsTarget" param1="EntityPlayer"/>
-	<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityNPC"/>
 <!--
 	<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityPlayer"/>
 	<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityNPC"/>
 -->
 
 	<property name="SleeperSmellSenseThreshold" value="5,30"/> <!-- Indiv.Random. smell capability - "I smell something" player smell value -->
-
 	<property name="SleeperSmellWakeThreshold" value="10,40"/>
 	<property name="SmellAlertThreshold" value="5"/> <!-- for awake zombies -->
 
@@ -1712,18 +1712,26 @@
 	<property class="MechanimAttackStates">
 		<property name="state0" value="Attack"/>
 	</property>
-	<property name="AITask-1" value="BreakDoor"/>
-	<property name="AITask-2" value="BreakBlock"/>
-	<property name="AITask-3" value="Territorial"/>
-	<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityAnimalStag" param2="30"/>
-	<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="25"/>
-	<property name="AITask-6" value="ApproachSpot"/>
-	<property name="AITask-7" value="Wander"/>
-	<property name="AITarget-1" value="SetAsTargetIfHurt"/>
-	<property name="AITarget-2" value="BlockingTargetTask"/>
-	<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer" param2="8"/>
-	<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalStag"/>
-	<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityZombie"/>
+<!-- 	<property name="AITask-1" value="BreakDoor"/> -->
+<!-- 	<property name="AITask-2" value="BreakBlock"/> -->
+	<property name="AITask-1" value="RunawayWhenHurt"/>
+	<property name="AITask-2" value="RunawayFromEntity" param1="EntityPlayer"/> 
+	<property name="AITask-3" value="RunawayFromEntity" param1="EntityZombie"/> 
+	<property name="AITask-4" value="Territorial"/>
+	<property name="AITask-5" value="ApproachSpot"/>
+	<property name="AITask-6" value="Wander"/>
+	<property name="AITarget-1" value="SetNearestCorpseAsTarget" param1="EntityAnimalStag"/>
+	<property name="AITarget-2" value="SetNearestCorpseAsTarget" param1="EntityPlayer"/>
+	<property name="AITarget-3" value="SetNearestCorpseAsTarget" param1="EntityZombie"/>
+	<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityNPC"/>
+<!--  	<property name="AITarget-1" value="SetNearestEntityAsTarget" param1="EntityAnimalStag"/> -->
+<!--  	<property name="AITarget-2" value="SetNearestEntityAsTarget" param1="EntityAnimalStag"/> -->
+<!--  	<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityZombie"/> -->
+<!-- 	<property name="AITarget-1" value="SetAsTargetIfHurt"/> -->
+<!-- 	<property name="AITarget-2" value="BlockingTargetTask"/> -->
+<!-- 	<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer" param2="8"/> -->
+<!-- 	<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalStag"/> -->
+<!-- 	<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityZombie"/> -->
 	<property name="SoundRandom" value="Animals/Vulture/vultureroam"/>
 	<property name="SoundAlert" value="Animals/Vulture/vulturealert"/>
 	<property name="SoundHurt" value="Animals/Vulture/vulturepain"/>
