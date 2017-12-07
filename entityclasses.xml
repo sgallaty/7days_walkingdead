@@ -1506,8 +1506,8 @@
 -->
 	<!--property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalBear" /-->
         <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag"/>
-	<property name="AITask-6" value="ApproachSpot"/>
-	<property name="AITask-7" value="Wander"/>
+<!--	<property name="AITask-6" value="ApproachSpot"/> -->
+	<property name="AITask-6" value="Wander"/>
 	<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityZombie"/>
 	<property name="AITarget-2" value="BlockingTargetTask"/>
 <!--
