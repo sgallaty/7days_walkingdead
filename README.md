@@ -7,6 +7,7 @@ This is a mod for 7 days to die which in the final form will do the following :
 *  1.c) Zombies rely on headshot damage to kill. 
 *  1.d) elimination of cute/special/corny zombies
 *  1.e) most zombies have poor eyesight but good hearing and smell
+*  1.f) elimination of GPS zombies and blood moon hordes
   
 2) game changes
 *  2.a) increased headshot damage for all weapons 
