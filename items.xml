@@ -861,6 +861,63 @@ Mesh files no longer used:
 	<property name="LightValue" value="0.45"/>
 </item>
 
+<item id="2050" name="gunCarbine">
+	<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="repairKit"/>
+	<property name="HoldType" value="30"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="FuelValue" value="32"/>
+	<property name="Attachments" value="flashlight02"/>
+	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+	<property class="Parts">
+		<property name="Stock" value="partsHuntingRifle_stock"/>
+		<property name="Receiver" value="partsPistol_receiver"/>
+		<property name="Pump" value="partsPistol_parts"/>
+		<property name="Barrel" value="partsHuntingRifle_barrel"/>
+	</property>
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="DamageBonus.head" value="20"/>
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value="0.5"/>
+		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
+		<property name="Crosshair_max_distance" value="36"/> <!-- 36 -->
+		<property name="Magazine_size" value="16"/>
+		<property name="Magazine_items" value="9mmBullet"/>
+		<property name="Magazine_item_ray_counts" value="1"/>
+		<property name="Magazine_item_ray_spreads" value="0"/>
+		<property name="Reload_time" value="2.66"/>
+		<property name="Bullet_icon" value="uzi"/>
+		<property name="Sound_start" value="hunting_rifle_fire"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="mp5_reload"/>
+		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+		<property name="DamageBonus.wood" value="5"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.glass" value="1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="35"/>
+		<property name="Zoom_max_in" value="35"/>
+	</property>
+	<property name="LightSource" value="lightSource"/> <!-- Start: Needed for the attachment flashlight -->
+	<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+	<property name="AttachmentFlashlight" value="flashlight02"/> <!-- End: Needed for the attachment flashlight -->
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Rifles"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="LightValue" value="0.45"/>
+</item>
+
 <item id="51" name="gunSniperRifle">
 	<property name="Meshfile" value="Items/Weapons/Ranged/SniperRifle/sniperRiflePrefab"/>
 	<property name="Material" value="metal"/>
@@ -7603,7 +7660,7 @@ Mesh files no longer used:
 	<property name="Extends" value="schematicMaster"/>
 	<property name="EconomicValue" value="500"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="gunMP5"/>
+		<property name="Recipes_to_learn" value="gunMP5,gunCarbine"/>
 		<!-- <property name="Skills_to_gain" value="craftSkillGuns"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
@@ -7622,7 +7679,7 @@ Mesh files no longer used:
 <item id="931" name="huntingRifleSchematic">
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="gunHuntingRifle"/>
+		<property name="Recipes_to_learn" value="gunHuntingRifle,gunCarbine"/>
 		<!-- <property name="Skills_to_gain" value="craftSkillGuns"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
