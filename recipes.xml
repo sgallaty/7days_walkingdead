@@ -479,11 +479,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="potassiumNitratePowder" count="1"/>
 </recipe>
 
+<!--
 <recipe name="cement" count="10" craft_area="forge" material_based="true">
 	<ingredient name="clayLump" count="10"/>
 	<ingredient name="sand" count="20"/>
 	<ingredient name="potassiumNitratePowder" count="1"/>
 </recipe>
+-->
 
 <recipe name="cement" count="10" craft_area="campfire" material_based="true" craft_tool="cookingPot">
 	<ingredient name="clayLump" count="20"/>
@@ -491,11 +493,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="potassiumNitratePowder" count="2"/>
 </recipe>
 
+<!--
 <recipe name="cement" count="10" craft_area="campfire" material_based="true" craft_tool="cookingPot">
 	<ingredient name="clayLump" count="20"/>
 	<ingredient name="sand" count="20"/>
 	<ingredient name="potassiumNitratePowder" count="2"/>
 </recipe>
+-->
 
 <recipe name="cementMixer" count="1" craft_area="workbench">
 	<ingredient name="forgedIron" count="25"/>
@@ -818,11 +822,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="cement" count="1"/>
 </recipe>
 
+<!--
 <recipe name="concreteMix" count="2" craft_area="cementMixer">
 	<ingredient name="sand" count="1"/>
 	<ingredient name="rockSmall" count="2"/>
 	<ingredient name="cement" count="1"/>
 </recipe>
+-->
 
 <recipe name="pouredConcreteBlock" count="1">
 	<ingredient name="concreteMix" count="10"/>
