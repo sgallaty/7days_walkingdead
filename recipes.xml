@@ -469,20 +469,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="candle" count="1"/>
 </recipe>
 
-<recipe name="cement" count="10" craft_area="forge" material_based="true">
+<recipe name="cement" count="1" craft_area="forge" material_based="true">
 	<ingredient name="unit_stone" count="5"/>
-</recipe>
-
-<recipe name="cement" count="10" craft_area="forge" material_based="true">
-	<ingredient name="clayLump" count="10"/>
-	<ingredient name="crushedSand" count="40"/>
-	<ingredient name="potassiumNitratePowder" count="1"/>
-</recipe>
-
-<recipe name="cement" count="10" craft_area="campfire" material_based="true" craft_tool="cookingPot">
-	<ingredient name="clayLump" count="20"/>
-	<ingredient name="crushedSand" count="40"/>
-	<ingredient name="potassiumNitratePowder" count="2"/>
 </recipe>
 
 <recipe name="cementMixer" count="1" craft_area="workbench">
