@@ -964,19 +964,19 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="feather" count="1"/>
 </recipe>
 
-<recipe name="fertilizer" count="1" craft_area="chemistryStation">
+<recipe name="fertilizer" count="5" craft_area="chemistryStation">
 	<ingredient name="turd" count="1"/>
 	<ingredient name="potassiumNitratePowder" count="10"/>
 	<ingredient name="dirtFragment" count="3"/>
 </recipe>
 
-<recipe name="fertilizer" count="1" craft_area="campfire" craft_tool="beaker">
+<recipe name="fertilizer" count="5" craft_area="campfire" craft_tool="beaker">
 	<ingredient name="turd" count="2"/>
 	<ingredient name="potassiumNitratePowder" count="15"/>
 	<ingredient name="dirtFragment" count="3"/>
 </recipe>
 
-<recipe name="fertilizer" count="1" craft_area="cementMixer">
+<recipe name="fertilizer" count="10" craft_area="cementMixer">
 	<ingredient name="rottingFlesh" count="10"/>
 	<ingredient name="potassiumNitratePowder" count="15"/>
 	<ingredient name="dirtFragment" count="10"/>
@@ -1207,7 +1207,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="grilledMeat" count="1" craft_area="campfire" craft_tool="cookingGrill">
-	<ingredient name="rawMeat" count="2"/>
+	<ingredient name="rawMeat" count="1"/>
 </recipe>
 
 <recipe name="gun44Magnum" count="1" craft_area="assembly">
@@ -1453,10 +1453,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="meatStew" count="1" craft_area="campfire" craft_tool="cookingPot">
-	<ingredient name="rawMeat" count="5"/>
-	<ingredient name="potato" count="5"/>
-	<ingredient name="corn" count="5"/>
-	<ingredient name="canBoiledWater" count="1"/> 
+	<ingredient name="rawMeat" count="1"/>
+	<ingredient name="potato" count="2"/>
+	<ingredient name="corn" count="2"/>
+	<ingredient name="canBoiledWater" count="2"/> 
 <!-- 	<ingredient name="bottledWater" count="1"/> -->
 </recipe>
 
