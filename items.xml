@@ -804,6 +804,8 @@ Mesh files no longer used:
 	<property name="LightValue" value="0.45"/>
 </item>
 
+<!-- changed into a survival rifle that can chamber 7.62 and 9mm ammo.  it's magic, don't ask how.  -->
+
 <item id="50" name="gunHuntingRifle">
 	<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab"/>
 	<property name="Material" value="metal"/>
@@ -830,9 +832,9 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="36"/> <!-- 36 -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="762mmBullet"/>
-		<property name="Magazine_item_ray_counts" value="1"/>
-		<property name="Magazine_item_ray_spreads" value="0"/>
+		<property name="Magazine_items" value="762mmBullet, 9mmBullet, 44MagBullet"/>
+		<property name="Magazine_item_ray_counts" value="1, 1, 1"/>
+		<property name="Magazine_item_ray_spreads" value="0, 0, 0"/> 
 		<property name="Reload_time" value="2.66"/>
 		<property name="Bullet_icon" value="uzi"/>
 		<property name="Sound_start" value="hunting_rifle_fire"/>
@@ -861,11 +863,16 @@ Mesh files no longer used:
 	<property name="LightValue" value="0.45"/>
 </item>
 
-<item id="2050" name="gunCarbine">
-	<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab"/>
+<!-- carbine rifle -->
+
+<item id="801" name="gunCarbine">
+	<property name="CustomIcon" value="gunMP5"/>
+	<property name="CustomIconTint" value="FFC0C0"/>
+	<property name="Meshfile" value="Items/Weapons/Ranged/MP5/MP5Prefab"/>
 	<property name="Material" value="metal"/>
 	<property name="RepairTools" value="repairKit"/>
-	<property name="HoldType" value="30"/>
+<!--	<property name="HoldType" value="30"/> -->
+	<property name="HoldType" value="6"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="FuelValue" value="32"/>
@@ -873,8 +880,8 @@ Mesh files no longer used:
 	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
 	<property class="Parts">
-		<property name="Stock" value="partsHuntingRifle_stock"/>
-		<property name="Receiver" value="partsPistol_receiver"/>
+		<property name="Stock" value="partsMP5_stock"/>
+		<property name="Receiver" value="partsMP5_receiver"/>
 		<property name="Pump" value="partsPistol_parts"/>
 		<property name="Barrel" value="partsHuntingRifle_barrel"/>
 	</property>
@@ -891,8 +898,8 @@ Mesh files no longer used:
 		<property name="Magazine_item_ray_counts" value="1"/>
 		<property name="Magazine_item_ray_spreads" value="0"/>
 		<property name="Reload_time" value="2.66"/>
-		<property name="Bullet_icon" value="uzi"/>
-		<property name="Sound_start" value="hunting_rifle_fire"/>
+		<property name="Bullet_icon" value="pistol"/>
+		<property name="Sound_start" value="Pistol_Fire"/>
 		<property name="Sound_repeat" value=""/>
 		<property name="Sound_end" value=""/>
 		<property name="Sound_empty" value="weapon_empty"/>
@@ -1034,6 +1041,7 @@ Mesh files no longer used:
 	<property name="Sound_Sight_In" value="rifle_sight_in"/>
 	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
 	<property class="Action0"> <!-- AttackAction -->
+		<property name="Hitmask_override" value="Ranged"/> 
 		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value="0.8"/>
@@ -1059,11 +1067,35 @@ Mesh files no longer used:
 		<property name="Buff" value="shotgunWound"/>
 		<property name="Buff_chance" value="1.0"/>
 	</property>
-	<property class="Action1"> <!-- UseAction -->
+	<property class="Action1"> <!-- AttackAction -->
+		<property name="Hitmask_override" value="Melee"/> <!-- "Class" value="Ranged" is hardcoded to never collide with grass regardless -->
+		<property class="Attributes">
+			<property name="EntityDamage" value="8,14"/>
+			<property name="BlockDamage" value="3,12"/>
+			<property name="DegradationRate" value="3,1"/>
+		</property>
+		<property name="Explosion.ParticleIndex" value="0"/> <!-- no expl. -->
+		<property name="Explosion.BlastPower" value="20"/> <!-- trying to add knockback -->
+		<property name="HoldType" value="2"/>
+        	<property name="DamageBonus.head" value="20"/>
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1"/>
+		<property name="Range" value="1.9"/>
+		<property name="Sphere" value="0.2"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="7"/> <!-- 10 is the break even point with maxed Athletics and Sexosaurus, standing still -->
+		<property name="DamageBonus.glass" value="1"/> <!-- These are multipliers and correspond to "damage_category" in materials.xml. -->
+		<property name="ActionExp" value="2"/>
+		<property name="ActionExpBonusMultiplier" value="10"/>
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+	</property>
+<!--
+	<property class="Action1"> 
 		<property name="Class" value="Zoom"/>
 		<property name="Zoom_max_out" value="40"/>
 		<property name="Zoom_max_in" value="40"/>
 	</property>
+-->
 	<property name="Group" value="Ammo/Weapons"/>
 	<property class="Attributes">
 		<property name="EntityDamage" value="6,9.4"/>
