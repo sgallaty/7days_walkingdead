@@ -12,12 +12,14 @@ This is a mod for 7 days to die which in the final form will do the following :
 2) game changes
 *  2.a) increased headshot damage for all weapons 
 *  2.b) previous craft items which consumed jars now take cans and return cans or do not take cans 
-*  2.c) upped damage of hunting rifle to realistically reflect winchester .308-style bolt action rifles
+*  2.c) upped damage of hunting rifle to realistically reflect winchester .308-style bolt action rifles (TODO)
 *  2.d) carbine rifle in 9mm 
-*  2.e) can add scope to hunting rifle
+*  2.e) can add scope to hunting rifle (TODO)
+*  2.f) hunting rifle is a survival rifle and can take multiple types of ammunition
+*  2.g) blunderbuss now has melee attack as secondary instead of zoom
   
 3) creature changes
-*  3.a) vultures now avoid players, seek out corpses and eat them
+*  3.a) vultures now avoid players, seek out corpses and eat them (WIP)
 *  3.b) dogs are now neutral to players, attack zombies and eat corpses - but are territorial and will attacked if provoked
   
 more to follow
