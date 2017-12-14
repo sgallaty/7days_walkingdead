@@ -1456,7 +1456,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="rawMeat" count="1"/>
 	<ingredient name="potato" count="2"/>
 	<ingredient name="corn" count="2"/>
-	<ingredient name="canBoiledWater" count="2"/> 
+	<ingredient name="canBoiledWater" count="1"/> 
 <!-- 	<ingredient name="bottledWater" count="1"/> -->
 </recipe>
 
@@ -2146,9 +2146,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="vegetableStew" count="1" craft_area="campfire" craft_tool="cookingPot">
-	<ingredient name="potato" count="5"/>
-	<ingredient name="corn" count="5"/>
-	<ingredient name="mushrooms" count="5"/>
+	<ingredient name="potato" count="2"/>
+	<ingredient name="corn" count="2"/>
+	<ingredient name="mushrooms" count="2"/>
 	<ingredient name="canBoiledWater" count="1"/> 
 <!-- 	<ingredient name="bottledWater" count="1"/> -->
 </recipe>
