@@ -41,13 +41,13 @@ Mesh files no longer used:
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property class="Action0"> <!-- AttackAction -->
+        	<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.33"/>
 		<property name="Range" value="2.2"/>
 		<property name="Sphere" value="0.2"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="7"/> <!-- 10 is the break even point with maxed Athletics and Sexosaurus, standing still -->
-		<property name="DamageBonus.head" value="4"/>
 		<property name="DamageBonus.glass" value="1"/> <!-- These are multipliers and correspond to "damage_category" in materials.xml. -->
 		<property name="ActionExp" value="2"/>
 		<property name="ActionExpBonusMultiplier" value="10"/>
@@ -72,7 +72,6 @@ Mesh files no longer used:
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Buff" value="criticalBlunt"/>
 		<property name="Buff_chance" value="0.1"/>
-		<property name="DamageBonus.head" value="4"/>
 		<property name="Stamina_usage" value="3.7"/>
 	</property>
 	<property name="CritChance" value="0.10"/>
@@ -92,7 +91,6 @@ Mesh files no longer used:
 		<property name="Stamina_usage" value="8"/>
 		<property name="Buff" value="criticalBlunt"/>
 		<property name="Buff_chance" value="0.2"/>
-		<property name="DamageBonus.head" value="4"/>
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="9,16"/>
@@ -115,7 +113,6 @@ Mesh files no longer used:
 		<property name="Delay" value="1.15"/>
 		<property name="Buff" value="bleeding,criticalBlunt"/>
 		<property name="Buff_chance" value="0.3,0.3"/>
-		<property name="DamageBonus.head" value="5"/>
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="8,19"/>
@@ -138,7 +135,6 @@ Mesh files no longer used:
 		<property name="Stamina_usage" value="8.5"/>
 		<property name="Buff" value="bleeding,criticalBlunt"/>
 		<property name="Buff_chance" value="0.5,0.4"/>
-		<property name="DamageBonus.head" value="6"/>
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="12,30"/>
@@ -161,6 +157,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="500"/>
 	<property name="CritChance" value="0.4"/>
 	<property class="Action0"> <!-- AttackAction -->
+        	<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.8"/>
 		<property name="Range" value="2.4"/>
@@ -171,7 +168,6 @@ Mesh files no longer used:
 		<property name="Buff" value="criticalBlunt,stunned,sprainedLeg"/>
 		<property name="Buff_chance" value="0.5,0.3,0.3"/>
 		<property name="DamageBonus.wood" value="0.5"/>
-		<property name="DamageBonus.head" value="4"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
 	</property>
@@ -200,6 +196,7 @@ Mesh files no longer used:
 	<!-- examples for joel<property name="SoundUnholster" value="weapon_empty"/><property name="SoundHolster" value="Pistol_Fire"/>-->
 	<!-- <property name="LightSource" value="ParticleEffect/Point light"/>-->
 	<property class="Action0">
+        	<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.17"/>
 		<property name="Range" value="2.5"/>
@@ -210,7 +207,6 @@ Mesh files no longer used:
 		<property name="Stamina_usage" value="8"/>
 		<property name="Buff" value="burning"/>
 		<property name="Buff_chance" value="0.1"/>
-		<property name="DamageBonus.head" value="2"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="ToolCategory.Butcher" value="0" param1="20"/>
 	</property>
@@ -241,6 +237,7 @@ Mesh files no longer used:
 	<property name="ActivateObject" value="lightSource"/>
 	<property name="LightValue" value="0.52"/>
 	<property class="Action0"> <!-- AttackAction -->
+        	<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.1"/>
 		<property name="Range" value="2.0"/>
@@ -249,7 +246,6 @@ Mesh files no longer used:
 		<property name="DamageBlock" value="0.7"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="7"/>
-		<property name="DamageBonus.head" value="2"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="ToolCategory.Butcher" value="0" param1="20"/>
 	</property>
@@ -269,6 +265,7 @@ Mesh files no longer used:
 	<property name="SellableToTrader" value="false"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property class="Action0"> <!-- AttackAction -->
+        	<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.33"/>
 		<property name="Range" value="2.2"/>
@@ -276,7 +273,6 @@ Mesh files no longer used:
 		<property name="DamageBlock" value="5"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="6.1"/>
-		<property name="DamageBonus.head" value="2"/>
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
 	</property>
 	<property name="Group" value="Resources"/>
@@ -290,13 +286,13 @@ Mesh files no longer used:
 	<property name="HoldType" value="36"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property class="Action0"> <!-- AttackAction -->
+        	<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.2"/>
 		<property name="Range" value="2.2"/>
 		<property name="Sphere" value="0.1"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="4.73"/>
-		<property name="DamageBonus.head" value="5"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="DamageBonus.leaves" value="25"/>
 		<property name="DamageBonus.organic" value="8"/>
@@ -327,13 +323,13 @@ Mesh files no longer used:
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property class="Action0"> <!-- AttackAction -->
+        	<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.2"/>
 		<property name="Range" value="2.2"/>
 		<property name="Sphere" value="0.1"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="5.5"/>
-		<property name="DamageBonus.head" value="5"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="DamageBonus.leaves" value="25"/>
 		<property name="DamageBonus.organic" value="10"/>
@@ -365,6 +361,7 @@ Mesh files no longer used:
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="Weight" value="200"/>
 	<property class="Action0"> <!-- AttackAction -->
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.2"/>
 		<property name="Range" value="2.2"/>
@@ -372,7 +369,6 @@ Mesh files no longer used:
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="6.51"/>
 		<property name="DamageBonus.wood" value="3"/>
-		<property name="DamageBonus.head" value="5"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="DamageBonus.leaves" value="25"/>
 		<property name="DamageBonus.organic" value="3"/>
@@ -415,6 +411,7 @@ Mesh files no longer used:
 	<property name="Sound_Sight_Out" value="pistol_sight_out"/>
 	<property class="Action0">
 	<!-- AttackAction -->
+	<property name="DamageBonus.head" value="20"/>
 	<property name="Class" value="Ranged"/>
 		<property name="Delay" value="0.2"/>
 	<property name="Crosshair_min_distance" value="5"/>
@@ -435,7 +432,6 @@ Mesh files no longer used:
 	<property name="Sound_reload" value="pistol_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
-		<property name="DamageBonus.head" value="6"/>
 		<property name="DamageBonus.wood" value="3"/>
 		<property name="DamageBonus.earth" value="0.4"/>
 		<property name="DamageBonus.glass" value="1"/>
@@ -468,6 +464,7 @@ Mesh files no longer used:
 	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
 	<property class="Action0">
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value="0.3"/>
 		<property name="Crosshair_min_distance" value="5"/> <!-- 5 -->
@@ -485,7 +482,6 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="pistol_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
-		<property name="DamageBonus.head" value="6"/>
 		<property name="DamageBonus.wood" value="3"/>
 		<property name="DamageBonus.earth" value="0.4"/>
 		<property name="DamageBonus.glass" value="1"/>
@@ -530,6 +526,7 @@ Mesh files no longer used:
 	<property name="Sound_Sight_In" value="revolver_sight_in"/>
 	<property name="Sound_Sight_Out" value="revolver_sight_out"/>
 	<property class="Action0"> <!-- AttackAction -->
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value="0.34"/>
 		<property name="Crosshair_min_distance" value="7"/> <!-- 7 -->
@@ -547,7 +544,6 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="44magnum_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
-		<property name="DamageBonus.head" value="4"/>
 		<property name="DamageBonus.wood" value="4"/>
 		<property name="DamageBonus.earth" value="0.2"/>
 		<property name="DamageBonus.glass" value="1"/>
@@ -586,6 +582,7 @@ Mesh files no longer used:
 		<property name="Barrel" value="partsPumpShotgun_barrelShort"/>
 	</property>
 	<property class="Action0"> <!-- AttackAction -->
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value="0.8"/>
 		<property name="Crosshair_min_distance" value="41"/> <!-- 41 -->
@@ -603,7 +600,6 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="shotgun_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
-		<property name="DamageBonus.head" value="3"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="DamageBonus.wood" value="2"/>
 		<property name="DamageBonus.earth" value="0.2"/>
@@ -644,6 +640,7 @@ Mesh files no longer used:
 		<property name="Barrel" value="partsPumpShotgun_barrel"/>
 	</property>
 	<property class="Action0"> <!-- AttackAction -->
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value="0.8"/>
 		<property name="Crosshair_min_distance" value="23"/> <!-- 23 -->
@@ -661,7 +658,6 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="shotgun_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
-		<property name="DamageBonus.head" value="3"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="DamageBonus.wood" value="2"/>
 		<property name="DamageBonus.earth" value="0.2"/>
@@ -704,6 +700,7 @@ Mesh files no longer used:
 	<property name="Sound_Sight_In" value="smg_sight_in"/>
 	<property name="Sound_Sight_Out" value="smg_sight_out"/>
 	<property class="Action0"> <!-- AttackAction -->
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value="0.150"/>
 		<property name="Auto_fire" value="true"/>
@@ -724,7 +721,6 @@ Mesh files no longer used:
 		<property name="Horde_meter_distance" value="20"/>
 		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
-		<property name="DamageBonus.head" value="4"/>
 		<property name="DamageBonus.wood" value="5"/>
 		<property name="DamageBonus.earth" value="0.2"/>
 		<property name="DamageBonus.glass" value="1"/>
@@ -765,6 +761,7 @@ Mesh files no longer used:
 	<property name="Sound_Sight_In" value="rifle_sight_in"/>
 	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
 	<property class="Action0"> <!-- AttackAction -->
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value="0.150"/>
 		<property name="Auto_fire" value="true"/>
@@ -785,7 +782,6 @@ Mesh files no longer used:
 		<property name="Horde_meter_distance" value="20"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash_ak"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
-		<property name="DamageBonus.head" value="3"/>
 		<property name="DamageBonus.wood" value="5"/>
 		<property name="DamageBonus.earth" value="0.2"/>
 		<property name="DamageBonus.glass" value="1"/>
@@ -808,6 +804,8 @@ Mesh files no longer used:
 	<property name="LightValue" value="0.45"/>
 </item>
 
+<!-- changed into a survival rifle that can chamber 7.62 and 9mm ammo.  it's magic, don't ask how.  -->
+
 <item id="50" name="gunHuntingRifle">
 	<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab"/>
 	<property name="Material" value="metal"/>
@@ -828,14 +826,15 @@ Mesh files no longer used:
 	<property name="Sound_Sight_In" value="rifle_sight_in"/>
 	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
 	<property class="Action0"> <!-- AttackAction -->
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value="0.5"/>
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="36"/> <!-- 36 -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="762mmBullet"/>
-		<property name="Magazine_item_ray_counts" value="1"/>
-		<property name="Magazine_item_ray_spreads" value="0"/>
+		<property name="Magazine_items" value="762mmBullet, 9mmBullet, 44MagBullet"/>
+		<property name="Magazine_item_ray_counts" value="1, 1, 1"/>
+		<property name="Magazine_item_ray_spreads" value="0, 0, 0"/> 
 		<property name="Reload_time" value="2.66"/>
 		<property name="Bullet_icon" value="uzi"/>
 		<property name="Sound_start" value="hunting_rifle_fire"/>
@@ -845,7 +844,68 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="hunting_rifle_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
-		<property name="DamageBonus.head" value="6"/>
+		<property name="DamageBonus.wood" value="5"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.glass" value="1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="35"/>
+		<property name="Zoom_max_in" value="35"/>
+	</property>
+	<property name="LightSource" value="lightSource"/> <!-- Start: Needed for the attachment flashlight -->
+	<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+	<property name="AttachmentFlashlight" value="flashlight02"/> <!-- End: Needed for the attachment flashlight -->
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Rifles"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="LightValue" value="0.45"/>
+</item>
+
+<!-- carbine rifle -->
+
+<item id="801" name="gunCarbine">
+	<property name="CustomIcon" value="gunMP5"/>
+	<property name="CustomIconTint" value="FFC0C0"/>
+	<property name="Meshfile" value="Items/Weapons/Ranged/MP5/MP5Prefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="repairKit"/>
+<!--	<property name="HoldType" value="30"/> -->
+	<property name="HoldType" value="6"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="FuelValue" value="32"/>
+	<property name="Attachments" value="flashlight02"/>
+	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+	<property class="Parts">
+		<property name="Stock" value="partsMP5_stock"/>
+		<property name="Receiver" value="partsMP5_receiver"/>
+		<property name="Pump" value="partsPistol_parts"/>
+		<property name="Barrel" value="partsHuntingRifle_barrel"/>
+	</property>
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="DamageBonus.head" value="20"/>
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value="0.5"/>
+		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
+		<property name="Crosshair_max_distance" value="36"/> <!-- 36 -->
+		<property name="Magazine_size" value="16"/>
+		<property name="Magazine_items" value="9mmBullet"/>
+		<property name="Magazine_item_ray_counts" value="1"/>
+		<property name="Magazine_item_ray_spreads" value="0"/>
+		<property name="Reload_time" value="2.66"/>
+		<property name="Bullet_icon" value="pistol"/>
+		<property name="Sound_start" value="Pistol_Fire"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="mp5_reload"/>
+		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
 		<property name="DamageBonus.wood" value="5"/>
 		<property name="DamageBonus.earth" value="0.2"/>
 		<property name="DamageBonus.glass" value="1"/>
@@ -884,6 +944,7 @@ Mesh files no longer used:
 	<property name="Sound_Sight_In" value="rifle_sight_in"/>
 	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
 	<property class="Action0"> <!-- AttackAction -->
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value="0.5"/>
 		<property name="Crosshair_min_distance" value="45"/> <!-- 45 -->
@@ -901,7 +962,6 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="sniperrifle_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
-		<property name="DamageBonus.head" value="9"/>
 		<property name="DamageBonus.wood" value="5"/>
 		<property name="DamageBonus.earth" value="0.2"/>
 		<property name="DamageBonus.glass" value="1"/>
@@ -981,6 +1041,8 @@ Mesh files no longer used:
 	<property name="Sound_Sight_In" value="rifle_sight_in"/>
 	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
 	<property class="Action0"> <!-- AttackAction -->
+		<property name="Hitmask_override" value="Ranged"/> 
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value="0.8"/>
 		<!-- <property name="Range" value="40"/> -->
@@ -999,18 +1061,41 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="blunderbuss_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
-		<property name="DamageBonus.head" value="3"/>
 		<property name="DamageBonus.wood" value="2.5"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="DamageBonus.earth" value="0.2"/>
 		<property name="Buff" value="shotgunWound"/>
 		<property name="Buff_chance" value="1.0"/>
 	</property>
-	<property class="Action1"> <!-- UseAction -->
+	<property class="Action1"> <!-- AttackAction -->
+		<property name="Hitmask_override" value="Melee"/> <!-- "Class" value="Ranged" is hardcoded to never collide with grass regardless -->
+		<property class="Attributes">
+			<property name="EntityDamage" value="8,14"/>
+			<property name="BlockDamage" value="3,12"/>
+			<property name="DegradationRate" value="3,1"/>
+		</property>
+		<property name="Explosion.ParticleIndex" value="0"/> <!-- no expl. -->
+		<property name="Explosion.BlastPower" value="20"/> <!-- trying to add knockback -->
+		<property name="HoldType" value="2"/>
+        	<property name="DamageBonus.head" value="20"/>
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1"/>
+		<property name="Range" value="1.9"/>
+		<property name="Sphere" value="0.2"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="7"/> <!-- 10 is the break even point with maxed Athletics and Sexosaurus, standing still -->
+		<property name="DamageBonus.glass" value="1"/> <!-- These are multipliers and correspond to "damage_category" in materials.xml. -->
+		<property name="ActionExp" value="2"/>
+		<property name="ActionExpBonusMultiplier" value="10"/>
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+	</property>
+<!--
+	<property class="Action1"> 
 		<property name="Class" value="Zoom"/>
 		<property name="Zoom_max_out" value="40"/>
 		<property name="Zoom_max_in" value="40"/>
 	</property>
+-->
 	<property name="Group" value="Ammo/Weapons"/>
 	<property class="Attributes">
 		<property name="EntityDamage" value="6,9.4"/>
@@ -1029,6 +1114,8 @@ Mesh files no longer used:
 <!-- * * * * * * * * * * player / zombie / animal weapons / hands (and great big fangs) * * * * * * * * * * -->
 
 <item id="69" name="handMaster">
+	<property name="DegradationBreaksAfter" value="true"/>
+	<property name="Degradation" value="100" param1="true"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="Material" value="organic"/>
 	<property name="Canhold" value="false"/>
@@ -1036,6 +1123,12 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="1"/>
 	<property name="Candrop" value="false"/>
 	<property class="Action0"><!-- AttackAction -->
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.wood" value="1"/>
+		<property name="DamageBonus.earth" value="0.2083"/>
+		<property name="DamageBonus.stone" value="0.05"/>
+		<property name="DamageBonus.metal" value="0.01"/>
+		<property name="DamageBonus.organic" value="1"/>
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="0.8"/>
 		<property name="Range" value="1.65"/> <!-- This not what "clientside melee combat" means. =) This is the adjustment afterwards due to code changes. -->
@@ -1050,6 +1143,8 @@ Mesh files no longer used:
 
 <item id="70" name="handPlayer"> <!-- handPlayer must remain on ID 70 -->
 	<property name="Extends" value="handMaster"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="Degradation" value="999999" param1="false"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="0"/>
 	<property class="Action0">
@@ -1058,11 +1153,11 @@ Mesh files no longer used:
 		<property name="DamageEntity" value="5"/>
 		<property name="DamageBlock" value="1"/>
 		<property name="Stamina_usage" value="3"/>
-		<property name="DamageBonus.head" value="2"/>
 		<property name="DamageBonus.organic" value="5"/>
 		<property name="ToolCategory.harvestingTools" value="1.5" param1="1"/>
 	</property>
 	<property class="Action1"> <!-- UseAction -->
+	<property name="DamageBonus.head" value="2"/>
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1"/>
 		<property name="Use_time" value="..."/>
@@ -1174,6 +1269,8 @@ Mesh files no longer used:
 
 <item id="81" name="handAnimalZombieDog">
 	<property name="Extends" value="handMaster"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="Degradation" value="999999" param1="false"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="35"/>
 	<property class="Action0">
@@ -1199,6 +1296,8 @@ Mesh files no longer used:
 
 <item id="83" name="handAnimalBear">
 	<property name="Extends" value="handMaster"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="Degradation" value="999999" param1="false"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="46"/>
 	<property class="Action0">
@@ -1514,6 +1613,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="240"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property class="Action0">
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.1"/>
 		<property name="Range" value="2.1"/>
@@ -1522,7 +1622,6 @@ Mesh files no longer used:
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="8.27"/>
 		<property name="DamageBonus.wood" value="1"/>
-		<property name="DamageBonus.head" value="2"/>
 		<property name="DamageBonus.glass" value="0.25"/>
 		<property name="DamageBonus.stone" value="0.25"/>
 		<property name="DamageBonus.metal" value="0.25"/>
@@ -1554,6 +1653,7 @@ Mesh files no longer used:
 	<property name="RepairTools" value="forgedSteel"/>
 	<property name="EconomicValue" value="912"/>
 	<property class="Action0">
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Stamina_usage" value="15"/>
 		<property name="ToolCategory.Butcher" value="0.75" param1="10"/>
 		<property name="ToolCategory.harvestingTools" value="1.4" param1="1"/>
@@ -1576,6 +1676,7 @@ Mesh files no longer used:
 	<property name="FuelValue" value="30"/>
 	<property name="EconomicValue" value="240"/>
 	<property class="Action0">
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.0"/>
 		<property name="Range" value="2"/>
@@ -1584,7 +1685,6 @@ Mesh files no longer used:
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="7.52"/>
 		<property name="DamageBonus.glass" value="1"/>
-		<property name="DamageBonus.head" value="2"/>
 		<property name="DamageBonus.wood" value="0.2"/>
 		<property name="DamageBonus.earth" value="0.2"/>
 		<property name="DamageBonus.organic" value="0.2"/>
@@ -1639,6 +1739,7 @@ Mesh files no longer used:
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property class="Action0"> <!-- AttackAction -->
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.1"/>
 		<property name="Range" value="2"/>
@@ -1648,7 +1749,6 @@ Mesh files no longer used:
 		<property name="Stamina_usage" value="4.8"/>
 		<property name="DamageBonus.earth" value="2"/>
 		<property name="DamageBonus.glass" value="0.5"/>
-		<property name="DamageBonus.head" value="4"/>
 		<property name="DamageBonus.wood" value="0.3"/>
 		<property name="DamageBonus.stone" value="0.5"/>
 		<property name="DamageBonus.metal" value="0.25"/>
@@ -1682,6 +1782,7 @@ Mesh files no longer used:
 	<property name="FuelValue" value="30"/>
 	<property name="EconomicValue" value="240"/>
 	<property class="Action0"> <!-- AttackAction -->
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.1"/>
 		<property name="Range" value="2"/>
@@ -1745,6 +1846,7 @@ Mesh files no longer used:
 	<property name="FuelValue" value="24"/>
 	<property name="EconomicValue" value="200"/>
 	<property class="Action0"> <!-- AttackAction -->
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1"/>
 		<property name="Range" value="2"/>
@@ -1752,7 +1854,6 @@ Mesh files no longer used:
 		<property name="Block_range" value="4"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="6.5"/>
-		<property name="DamageBonus.head" value="3"/>
 		<property name="DamageBonus.earth" value="2"/>
 		<property name="DamageBonus.glass" value="0.2"/>
 		<property name="DamageBonus.stone" value="0"/>
@@ -1808,6 +1909,7 @@ Mesh files no longer used:
 	<property name="SoundDestroy" value="metaldestroy1"/>
 	<property name="EconomicValue" value="288"/>
 	<property class="Action0"> <!-- AttackAction -->
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.1"/>
 		<property name="Range" value="2"/>
@@ -1815,7 +1917,6 @@ Mesh files no longer used:
 		<property name="Sphere" value="0.1"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="8.27"/>
-		<property name="DamageBonus.head" value="3"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="DamageBonus.stone" value="0.5"/>
 		<property name="DamageBonus.wood" value="1"/>
@@ -1859,6 +1960,7 @@ Mesh files no longer used:
 	<property name="FuelValue" value="18"/>
 	<property name="EconomicValue" value="200"/>
 	<property class="Action0"> <!-- AttackAction -->
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="0.8"/>
 		<property name="Range" value="2.1"/>
@@ -1866,7 +1968,6 @@ Mesh files no longer used:
 		<property name="Sphere" value="0.1"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="6"/>
-		<property name="DamageBonus.head" value="4"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="DamageBonus.stone" value="1"/>
 		<property name="DamageBonus.metal" value="1"/>
@@ -1912,6 +2013,7 @@ Mesh files no longer used:
 		<property name="Barrel" value="partsNailgun_battery"/>
 	</property>
 	<property class="Action0"> <!-- AttackAction -->
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Launcher"/>
 		<property name="Hitmask_override" value="Arrow"/>
 		<property name="Delay" value="0.3"/>
@@ -1930,7 +2032,6 @@ Mesh files no longer used:
 		<property name="Sound_end" value=""/>
 		<property name="Sound_empty" value="weapon_empty"/>
 		<property name="Sound_reload" value="nailgun_reload"/>
-		<property name="DamageBonus.head" value="6"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="ActionExp" value="2"/>
 	</property>
@@ -1963,6 +2064,7 @@ Mesh files no longer used:
 		<property name="Barrel" value="partsChainsaw_blade"/>
 	</property>
 	<property class="Action0"> <!-- AttackAction -->
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Ranged"/>
 		<property name="Auto_fire" value="true"/>
 		<property name="Hitmask_override" value="Melee"/> <!-- "Class" value="Ranged" is hardcoded to never collide with grass regardless -->
@@ -1985,7 +2087,6 @@ Mesh files no longer used:
 		<property name="Horde_meter_distance" value="20"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw"/>
 		<property name="DamageBonus.wood" value="10"/>
-		<property name="DamageBonus.head" value="5"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="SupportHarvesting" value="true"/>
 		<property name="UseMeleeCrosshair" value="true"/>
@@ -2014,6 +2115,7 @@ Mesh files no longer used:
 		<property name="Barrel" value="partsAuger_blade"/>
 	</property>
 	<property class="Action0"> <!-- AttackAction -->
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Ranged"/>
 		<property name="Auto_fire" value="true"/>
 		<property name="Hitmask_override" value="Melee"/>
@@ -2036,7 +2138,6 @@ Mesh files no longer used:
 		<property name="Horde_meter_distance" value="20"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw"/>
 		<property name="DamageBonus.wood" value="0.25"/>
-		<property name="DamageBonus.head" value="3"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="SupportHarvesting" value="true"/>
 		<property name="UseMeleeCrosshair" value="true"/>
@@ -2417,13 +2518,13 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="12"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property class="Action1">
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Projectile"/>
 		<property name="Explosion.ParticleIndex" value="0"/> <!-- no expl. -->
 		<property name="Velocity" value="47"/>
 		<property name="FlyTime" value="0"/>
 		<property name="Gravity" value="-4.7"/>
 		<property name="LifeTime" value="12"/>
-		<property name="DamageBonus.head" value="5"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="DamageBonus.wood" value="0.1"/>
 		<property name="DamageBonus.earth" value="0"/>
@@ -2446,6 +2547,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property class="Action1">
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Velocity" value="55"/>
 		<property name="Gravity" value="-4"/>
 		<property name="LifeTime" value="12"/>
@@ -2463,6 +2565,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="57"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property class="Action1">
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Velocity" value="75"/>
 		<property name="Gravity" value="-4"/>
 		<property name="LifeTime" value="12"/>
@@ -2484,6 +2587,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="44"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property class="Action1">
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Velocity" value="55"/>
 		<property name="Gravity" value="-6"/>
 		<property name="LifeTime" value="12"/>
@@ -2540,13 +2644,13 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property class="Action1">
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="Projectile"/>
 		<property name="Explosion.ParticleIndex" value="0"/> <!-- no expl. -->
 		<property name="Velocity" value="80"/>
 		<property name="FlyTime" value="0"/>
 		<property name="Gravity" value="-4"/>
 		<property name="LifeTime" value="12"/>
-		<property name="DamageBonus.head" value="5"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="DamageBonus.wood" value="0.1"/>
 		<property name="DamageBonus.earth" value="0"/>
@@ -2774,6 +2878,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property class="Action0"> <!-- AttackAction -->
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Class" value="ThrowAway"/>
 		<property name="Delay" value="1.2"/>
 		<property name="Throw_strength_default" value="8"/>
@@ -2816,6 +2921,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="34"/>
 	<property name="EconomicBundleSize" value="10"/>
 	<property class="Action1">
+		<property name="DamageBonus.head" value="20"/>
 		<property name="Velocity" value="55"/>
 		<property name="Gravity" value="-4"/>
 		<property name="LifeTime" value="2"/>
@@ -6812,6 +6918,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="0"/>
 		<property name="Gain_wellness" value="0.4"/>
 		<property name="Sound_start" value="player_eating"/>
+		<property name="Create_item" value="canEmpty"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -7001,6 +7108,7 @@ Mesh files no longer used:
 		<property name="Sound_start" value="player_drinking"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 		<property name="Buff" value="stewWarming,eatFood_78_Trigger"/>
+		<property name="Create_item" value="canEmpty"/>
 	</property>
 	<property name="Smell" value="exLargeSmell"/>
 	<property name="Group" value="Food/Cooking"/>
@@ -7200,6 +7308,7 @@ Mesh files no longer used:
 		<property name="Gain_wellness" value="0.5"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<property name="Buff" value="stewWarming,eatFood_12_Trigger"/>
+		<property name="Create_item" value="canEmpty"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -7238,7 +7347,7 @@ Mesh files no longer used:
 	<property name="Material" value="metal"/>
 	<property name="Weight" value="5"/>
 	<property name="HoldType" value="14"/>
-	<property name="Stacknumber" value="1"/>
+	<property name="Stacknumber" value="15"/>
 	<property name="EconomicValue" value="8"/>
 	<property name="CraftingIngredientTime" value="10"/>
 	<property class="Action1">
@@ -7583,7 +7692,7 @@ Mesh files no longer used:
 	<property name="Extends" value="schematicMaster"/>
 	<property name="EconomicValue" value="500"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="gunMP5"/>
+		<property name="Recipes_to_learn" value="gunMP5,gunCarbine"/>
 		<!-- <property name="Skills_to_gain" value="craftSkillGuns"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
@@ -7602,7 +7711,7 @@ Mesh files no longer used:
 <item id="931" name="huntingRifleSchematic">
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="gunHuntingRifle"/>
+		<property name="Recipes_to_learn" value="gunHuntingRifle,gunCarbine"/>
 		<!-- <property name="Skills_to_gain" value="craftSkillGuns"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>

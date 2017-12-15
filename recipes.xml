@@ -296,7 +296,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="blueberries" count="1"/>
 	<ingredient name="egg" count="1"/>
 	<ingredient name="cornMeal" count="1"/>
-	<ingredient name="bottledWater" count="1"/>
+<!-- 	<ingredient name="bottledWater" count="1"/> -->
 </recipe>
 
 <recipe name="plantedBlueberry1" count="1" craft_time="1">
@@ -890,7 +890,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="cornBread" count="1" craft_area="campfire" craft_tool="cookingPot">
 	<ingredient name="cornMeal" count="1"/>
-	<ingredient name="bottledWater" count="1"/>
+	<ingredient name="canBoiledWater" count="1"/> 
+<!--	<ingredient name="bottledWater" count="1"/> -->
 </recipe>
 
 <recipe name="cornMeal" count="1">
@@ -899,7 +900,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="cornOnTheCob" count="1" craft_area="campfire" craft_tool="cookingPot">
 	<ingredient name="corn" count="1"/>
-	<ingredient name="bottledWater" count="1"/>
+<!-- 	<ingredient name="bottledWater" count="1"/> -->
 </recipe>
 
 <recipe name="plantedCorn1" count="1" craft_time="1">
@@ -935,7 +936,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="eggboiled" count="1" craft_area="campfire" craft_tool="cookingPot">
 	<ingredient name="egg" count="1"/>
-	<ingredient name="bottledWater" count="1"/>
+<!-- 	<ingredient name="bottledWater" count="1"/> -->
 </recipe>
 
 <recipe name="emptyJar" count="1" craft_area="forge" material_based="true">
@@ -963,19 +964,19 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="feather" count="1"/>
 </recipe>
 
-<recipe name="fertilizer" count="1" craft_area="chemistryStation">
+<recipe name="fertilizer" count="5" craft_area="chemistryStation">
 	<ingredient name="turd" count="1"/>
 	<ingredient name="potassiumNitratePowder" count="10"/>
 	<ingredient name="dirtFragment" count="3"/>
 </recipe>
 
-<recipe name="fertilizer" count="1" craft_area="campfire" craft_tool="beaker">
+<recipe name="fertilizer" count="5" craft_area="campfire" craft_tool="beaker">
 	<ingredient name="turd" count="2"/>
 	<ingredient name="potassiumNitratePowder" count="15"/>
 	<ingredient name="dirtFragment" count="3"/>
 </recipe>
 
-<recipe name="fertilizer" count="1" craft_area="cementMixer">
+<recipe name="fertilizer" count="10" craft_area="cementMixer">
 	<ingredient name="rottingFlesh" count="10"/>
 	<ingredient name="potassiumNitratePowder" count="15"/>
 	<ingredient name="dirtFragment" count="10"/>
@@ -1202,11 +1203,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="boiledMeat" count="1" craft_area="campfire" craft_tool="cookingPot">
 	<ingredient name="rawMeat" count="1"/>
-	<ingredient name="bottledWater" count="1"/>
+<!-- 	<ingredient name="bottledWater" count="1"/> -->
 </recipe>
 
 <recipe name="grilledMeat" count="1" craft_area="campfire" craft_tool="cookingGrill">
-	<ingredient name="rawMeat" count="2"/>
+	<ingredient name="rawMeat" count="1"/>
 </recipe>
 
 <recipe name="gun44Magnum" count="1" craft_area="assembly">
@@ -1452,10 +1453,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="meatStew" count="1" craft_area="campfire" craft_tool="cookingPot">
-	<ingredient name="rawMeat" count="5"/>
-	<ingredient name="potato" count="5"/>
-	<ingredient name="corn" count="5"/>
-	<ingredient name="bottledWater" count="1"/>
+	<ingredient name="rawMeat" count="1"/>
+	<ingredient name="potato" count="2"/>
+	<ingredient name="corn" count="2"/>
+	<ingredient name="canBoiledWater" count="1"/> 
+<!-- 	<ingredient name="bottledWater" count="1"/> -->
 </recipe>
 
 <recipe name="metalReinforcedWoodDrawBridge" count="1" craft_area="workbench">
@@ -2144,10 +2146,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="vegetableStew" count="1" craft_area="campfire" craft_tool="cookingPot">
-	<ingredient name="potato" count="5"/>
-	<ingredient name="corn" count="5"/>
-	<ingredient name="mushrooms" count="5"/>
-	<ingredient name="bottledWater" count="1"/>
+	<ingredient name="potato" count="2"/>
+	<ingredient name="corn" count="2"/>
+	<ingredient name="mushrooms" count="2"/>
+	<ingredient name="canBoiledWater" count="1"/> 
+<!-- 	<ingredient name="bottledWater" count="1"/> -->
 </recipe>
 
 <recipe name="whitePicketFenceSheet" count="1">
