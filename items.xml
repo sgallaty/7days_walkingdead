@@ -9429,6 +9429,7 @@ Mesh files no longer used:
 	<property class="Attributes">
 		<property name="DegradationMax" value="1000,6000"/>
 	</property>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
 
 <item id="1439" name="glue">

@@ -1119,6 +1119,13 @@
 		</effect>
 	</perk>
 
+	<perk name="Solar Energy Generation" icon="resource" description_key="The ability to create solar panels and solar banks." title_key="Solar Power Tech" max_level="2" skill_point_cost_multiplier="2" skill_point_cost_per_level="4" group="tools">
+		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="3"/>
+		<requirement skill_level="2" required_skill_name="craftSkillScience" required_skill_level="7"/>
+		<recipe name="solarbank" unlock_level="1"/>
+		<recipe name="solarCell" unlock_level="2"/>
+	</perk>
+
 <!--
 	<perk name="Test1" icon="paint_bucket"  max_level="5" skill_point_cost_multiplier="1.4" skill_point_cost_per_level="5" group="tools">
 	</perk>
